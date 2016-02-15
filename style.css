@@ -1,0 +1,65 @@
+.container{
+	position: relative;
+	width: 512px;
+	height: 384px;
+	margin: 40px auto;
+}
+#slider-box{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: no-repeat;
+	background-size: 100%;
+	-webkit-transition: 0.5s;
+       -moz-transition: 0.5s;
+         -o-transition: 0.5s;
+            transition: 0.5s;
+}
+#prew{
+	position: absolute;
+	top: 164px;
+	left: -40px;
+	width: 0;
+	height: 0;
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	border-right: 30px solid #CCC;
+	cursor: pointer;
+}
+#prew:hover{
+	border-right: 30px solid #DDD;
+}
+#next{
+	position: absolute;
+	top: 164px;
+	left: 522px;
+	width: 0;
+	height: 0;
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	border-left: 30px solid #CCC;
+	cursor: pointer;
+}
+#next:hover{
+	border-left: 30px solid #DDD;
+}
+#progress-box{
+	position: absolute;
+    top: 390px;
+    left: 215px;
+}
+.slide{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 2px solid #CCC;
+	margin: 2px;
+}
+.slide:hover{
+	cursor: pointer;
+}
+.slide-active{
+	background-color: #CCC;
+}
